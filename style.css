@@ -1,0 +1,54 @@
+body{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     height: 100vh;
+}
+.calculator{
+    background-color: rgb(212, 209, 209);
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 1px 2px rgb(107, 101, 101);
+}
+.buttons{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 5px;
+}
+
+.buttons button{
+    padding: 10px 6px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(240, 234, 234);
+    box-shadow: 1px 1px 1px 1px rgb(156, 156, 179);
+    margin-top: 20px;
+    font-size: 1.3em;
+    font-weight: bold;
+    cursor: pointer; 
+}
+
+.buttons button:active{
+    transform: calc(0.95s);
+    box-shadow: 1px 1px 1px 2px gray;
+} 
+button.black{
+    background-color: black;
+    color: white;
+}
+
+button.red{
+    background-color: red;
+    color: white;
+}
+
+.display{
+    width: 97%;
+    padding-top: 30px;
+    border: 2px solid white;
+    box-shadow: inset 0px 0px 0px 2px gainsboro;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: right;
+}
